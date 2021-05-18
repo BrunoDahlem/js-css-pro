@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.div1{
+    background: radial-gradient(red 50%, darkred,#000);
+}
+.div2 {
+    background: radial-gradient(closest-side,red 50%, darkred,#000);
+}
+.div3 {
+    animation-name: rotacao;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.div4 {
+    background: radial-gradient(ellipse at top,red 50%, darkred,#000);
+}
+.linear-repetido {
+    background: repeating-linear-gradient(to top left,red,red 2px,#fff 5px, #fff 10px);
+}
+.radial-repetido {
+    background: repeating-radial-gradient(circle at 50%,#fff ,#fff 10px, red 10px,red 20px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes rotacao {
+    0% {
+        background: radial-gradient(circle at 125%,red 50%, darkred,#000);
+    }
+    10% {
+        background: radial-gradient(circle at 100%,red 50%, darkred,#000);
+    }
+    20% {
+        background: radial-gradient(circle at 75%,red 50%, darkred,#000);
+    }
+    30% {
+        background: radial-gradient(circle at 50%,red 50%, darkred,#000);
+    }
+    40% {
+        background: radial-gradient(circle at 25%,red 50%, darkred,#000);
+    }
+    50% {
+        background: radial-gradient(circle at 0%,red 50%, darkred,#000);
+    }
+    60% {
+        background: radial-gradient(circle at 25%,red 50%, darkred,#000);
+    }
+    70% {
+        background: radial-gradient(circle at 50%,red 50%, darkred,#000);
+    }
+    80% {
+        background: radial-gradient(circle at 75%,red 50%, darkred,#000);
+    }
+    90% {
+        background: radial-gradient(circle at 100%,red 50%, darkred,#000);
+    }
+    100% {
+        background: radial-gradient(circle at 125%,red 50%, darkred,#000);
+    }
+}

@@ -1,0 +1,21 @@
+:root{
+    --cor: orange;
+    --cor-bg: linear-gradient(red, var(--cor));
+}
+html,body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    background: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+div{
+    width: 600px;
+    height: 600px;
+    border:#000;
+    /* background: linear-gradient(red, violet,purple); */
+    /* background: var(--cor-bg); */ 
+    
+
+}
+
