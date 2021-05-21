@@ -1,0 +1,53 @@
+html,body {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.img {
+    width: 350px;
+    height: 350px;
+    background-image: url(../images/capa-disco.png);
+    transition: background-imagem 1s;
+    background-size: contain;
+}
+.imgDisco {
+    width: 145px;
+    height: 145px;
+    background-image: url(../images/capa-disco.png);
+    position: absolute;
+    top: 29%;
+    left: 58%;
+    z-index: -1;
+    background-size: contain;
+    border-radius: 50%;
+    transition: left 1s, background-imagem 1s;
+}
+
+.disco {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: repeating-radial-gradient(#000,#000 10px,#333 6px,#334 12px);
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: -2;
+    transition: left 1s;
+}
+.container:hover .img {
+    background-image: url(../images/capa-animada.gif);
+    background-size: contain;
+}
+.container:hover .disco {
+    left: 300px;
+}
+.container:hover .imgDisco {
+    left: 115%;
+    background-image: url(../images/capa-animada.gif);
+    background-size: contain;
+}

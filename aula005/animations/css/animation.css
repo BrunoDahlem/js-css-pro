@@ -1,0 +1,19 @@
+div {
+    width: 200px;
+    height: 200px;
+    border: 2px solid purple;
+}
+
+div:hover {
+    animation-name: anima;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes anima {
+    to {
+        background: violet;
+    }
+}
