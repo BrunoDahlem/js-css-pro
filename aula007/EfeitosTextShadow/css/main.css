@@ -1,0 +1,87 @@
+body {
+    background: #000;
+}
+
+h1 {
+    font-size: 200px;
+    color: #fff;
+    text-align: center;
+}
+
+.fire {
+    font-family: 'Arial';
+    animation-name: mexeFogo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-direction: alternate;
+    /* animation-fill-mode: forwards; */
+}
+
+.neon {
+    font-family: 'Arial';
+    text-shadow:0 0 10px #fff, 
+                0 0 20px #fff, 
+                0 0 30px #fff,
+                0 0 40px #ff00de,
+                0 0 70px #ff00de, 
+                0 0 80px #ff00de,
+                0 0 100px #ff00de, 
+                0 0 150px #ff00de; 
+}
+
+.sobreposition {
+    font-family: 'Arial';
+    text-shadow:10px 10px 0 #ffd217, 
+                20px 20px 0 #5ac7ff,
+                30px 30px 0 #ffd217, 
+                40px 40px 0 #5ac7ff;
+}
+
+
+
+
+
+
+@keyframes mexeFogo {
+    0% {
+        text-shadow: 0 0 20px #FEFCC9,
+                    10px -10px 30px #feec85,
+                    -20px -20px 40px #ffae34,
+                    20px -40px 50px #ec760c,
+                    0 -80px 70px #973716,
+                    10px -90px 80px #451b0e;
+    }
+    25% {
+        text-shadow: 0 0 20px #FEFCC9,
+                    10px -10px 30px #feec85,
+                    -20px -20px 50px #ffae34,
+                    25px -40px 50px #ec760c,
+                    5px -80px 70px #973716,
+                    15px -90px 80px #451b0e;
+    }
+    50% {
+        text-shadow: 0 0 20px #FEFCC9,
+                    10px -10px 30px #feec85,
+                    -20px -20px 50px #ffae34,
+                    30px -50px 60px #ec760c,
+                    10px -90px 80px #973716,
+                    20px -100px 90px #451b0e;
+    }
+    75% {
+        text-shadow: 0 0 20px #FEFCC9,
+                    10px -10px 30px #feec85,
+                    -20px -20px 50px #ffae34,
+                    25px -50px 70px #ec760c,
+                    5px -90px 90px #973716,
+                    15px -100px 100px #451b0e;
+    }
+    100% {
+        text-shadow: 0 0 20px #FEFCC9,
+                    10px -10px 30px #feec85,
+                    -20px -20px 50px #ffae34,
+                    20px -50px 80px #ec760c,
+                    0 -90px 100px #973716,
+                    10px -100px 110px #451b0e;
+    }
+}

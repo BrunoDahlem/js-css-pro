@@ -1,0 +1,84 @@
+:root{
+    --traslatZ: 50px;
+    --rotate:90deg;
+    --rotateN:-90deg;
+    --widthCubo:100px;
+    --heightCubo:100px;
+    --heightGeral:100vh;
+    --widthGeral:100%;
+}
+
+html,body {
+    margin: 0;
+    background: #002244;
+}
+
+.container {
+    width: var(--widthGeral);
+    height: var(--heightGeral);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#palco {
+    perspective: 800px;
+}
+
+#cubo {
+    width: var(--widthCubo);
+    height: var(--heightCubo);
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+    animation-name: girar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-direction: normal;
+}
+
+.face {
+    width: var(--widthCubo);
+    height: var(--heightCubo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    position: absolute;
+    border-radius: 5px;
+    /* border: 1px dotted white; */
+}
+.face1 {
+    background: rgba(90,90,90,0.7);
+    transform: translateZ(var(--traslatZ));
+}
+.face2 {
+    background: rgba(0,210,0,0.7);
+    transform: rotateY(180deg) translateZ(var(--traslatZ));
+}
+.face3 {
+    background: rgba(210,0,0,0.7);
+    transform: rotateY(var(--rotate)) translateZ(var(--traslatZ));
+}
+.face4 {
+    background: rgba(0,0,210,0.7);
+    transform: rotateY(var(--rotateN)) translateZ(var(--traslatZ));
+}
+.face5{
+    background: rgba(210,210,0,0.7);
+    transform: rotateX(var(--rotate)) translateZ(var(--traslatZ));
+}
+.face6 {
+    background: rgba(210,0,210,0.7);
+    transform: rotateX(var(--rotateN)) translateZ(var(--traslatZ));
+}
+
+
+/* Rotação */
+
+@keyframes girar {
+    to {
+        transform: rotate3d(1,0,1,360deg);
+    }
+}
