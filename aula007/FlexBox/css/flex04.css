@@ -9,14 +9,13 @@ body {
 
 .container {
     border: 3px solid #fff;
-    width: calc(100% - 6px);
+    width: 640px;
     height: 480px;
 
     display: flex;
-    flex-direction: row;
-
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap:wrap ;
 }
 .filho {
     border: 2px solid yellow;
@@ -27,17 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-/* .filho:nth-child(odd) {
-    height: 200px;
-} aula007 */
 
-.primeiro {
-    order: 0;
+    /* flex-basis: 200px; */
 }
-.segundo {
-    order: 1;
-}
-.terceiro {
-    order: 2;
-}
+
