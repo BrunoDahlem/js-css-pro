@@ -1,0 +1,23 @@
+footer {
+    background: orange;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    color: $corDeFundo;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+        color: $corDeFundo;
+    }
+    .foto {
+        width: 100px;
+        height: 100px;
+        border: 1px dashed $corDeFundo;
+        background: url(../img/#{$imgMedico});
+        background-size: contain;
+        @include bordaRedonda();
+        @include sombra();
+    }
+}

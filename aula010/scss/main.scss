@@ -1,0 +1,18 @@
+@import 'vars';
+@import 'mixins';
+
+* {
+    text-decoration:none;
+    font-family: Raleway;
+}
+html, body {
+    margin: 0;
+    height: 100vh;
+}
+body {
+    background: $fundo;
+    
+    @include centralizar();
+    @import 'container';
+    @import 'footer01';
+}

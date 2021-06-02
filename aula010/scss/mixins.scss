@@ -1,0 +1,17 @@
+@mixin centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin bordaRedonda {
+    border-radius: 10px;
+}
+@mixin sombra($x:2px,$y:2px, $cor:red) {
+    box-shadow: $x $y 20px 0 $cor;
+}
+@mixin botaoCustom {
+    padding: 8px;
+    border: 1px solid $corDeFundo;
+
+    @content;
+}
