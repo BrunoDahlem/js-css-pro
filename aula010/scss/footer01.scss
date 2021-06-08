@@ -10,6 +10,9 @@ footer {
     align-items: center;
     a {
         color: $corDeFundo;
+        &:hover {
+            color: $fundo;
+        }
     }
     .foto {
         width: 100px;

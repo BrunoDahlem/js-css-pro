@@ -1,6 +1,6 @@
 .container {
     width: 640px;
-    height: 680px;
+    min-height: 680px;
     border: 2px double $corDeFundo;
 
     display: flex;
@@ -20,6 +20,8 @@
         background-size: contain;
         @include bordaRedonda();
         @include sombra($cor:$corDeFundo);
+
+        @include bolinha-ou-quadrado (true);
     }
     .btn {
         background: orange;
@@ -46,3 +48,16 @@
         }
     }
 }
+// lista em Sass
+// $cores: red, greenyellow, orange;
+// @each $corx in $cores {
+//     .item-#{$corx} {
+//         background: $corx;
+//     }
+// }
+//for em Sass
+// @for $i from 1 through 3 {
+//     li:nth-child(#{$i}){
+//         background: red;
+//     }
+// }
